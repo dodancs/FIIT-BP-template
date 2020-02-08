@@ -26,7 +26,7 @@
 \usepackage{lipsum}
 
 % Custom commands
-\newcommand{\signaturespace}[2]{%
+\newcommand{\signaturespace}[2]{
   % #1 = width of the dotted line
   % #2 = legend
   \begingroup
@@ -40,3 +40,8 @@
   \end{tabular}
   \endgroup
 }
+
+\newcommand{\emptypage}{\newpage
+\thispagestyle{empty}
+\mbox{}
+\newpage}
