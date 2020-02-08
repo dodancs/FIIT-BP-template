@@ -1,0 +1,54 @@
+% Cover page
+\input{templates/header}
+
+\ifx\FIITlagEN\undefined
+Vedúci práce: \FIITsupervisor
+\else
+Supervisor: \FIITsupervisor
+\fi
+
+\medskip{}
+
+\ifx\FIITlagEN\undefined
+\FIITdateSK
+\else
+\FIITdate
+\fi
+
+\pagenumbering{roman}
+\input{templates/empty}
+
+
+
+
+
+% Thesis title page
+\input{templates/header}
+
+\ifx\FIITlagEN\undefined
+Študijný program: \FIITstudyProgramSK
+
+Číslo a názov študijného odboru: \FIITdegreeCourseSK
+
+Školiace pracovisko: \FIITinstituteSK
+
+Vedúci práce: \FIITsupervisor
+\else
+Study program: \FIITstudyProgram
+
+Degree course: \FIITdegreeCourse
+
+Place of elaboration: \FIITinstitute
+
+Supervisor: \FIITsupervisor
+\fi
+
+\medskip{}
+
+\ifx\FIITlagEN\undefined
+\FIITdateSK
+\else
+\FIITdate
+\fi
+
+\input{templates/empty}

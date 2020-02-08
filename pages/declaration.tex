@@ -1,0 +1,20 @@
+\thispagestyle{empty}
+
+\vspace*{\fill}
+
+\ifx\FIITlagEN\undefined
+\section*{Čestné prehlásenie}
+\else
+\section*{Declaration of honor}
+\fi
+
+\lorem{1}
+
+\ifx\FIITlagEN\undefined
+\FIITsignPlaceSK \FIITsignDate
+\else
+\FIITsignPlace \FIITsignDate
+\fi
+\hspace*{\fill} \signaturespace{5cm}{\FIITauthor}
+
+\input{templates/empty}

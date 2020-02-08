@@ -1,0 +1,42 @@
+\usepackage[final]{pdfpages}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[\FIITlanguage]{babel}
+\usepackage[a4paper]{geometry}
+\usepackage[
+    left = \glqq,% 
+    right = \grqq,% 
+    leftsub = \glq,% 
+    rightsub = \grq%
+]{dirtytalk}
+\usepackage[parfill]{parskip}
+\usepackage{enumitem}
+\usepackage{calc}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{longtable}
+\usepackage{setspace}
+\usepackage{tabularx}
+\usepackage{fancyhdr}
+\usepackage[backend=bibtex,defernums=true]{biblatex}
+\usepackage{listing}
+\usepackage{lscape}
+\usepackage{afterpage}
+
+\usepackage{lipsum}
+
+% Custom commands
+\newcommand{\signaturespace}[2]{%
+  % #1 = width of the dotted line
+  % #2 = legend
+  \begingroup
+  \renewcommand{\arraystretch}{0}
+  \begin{tabular}[t]{cc}
+  \hspace*{0pt}
+  \cleaders\hbox{\kern.6pt.\kern.6pt}\hskip#1\relax
+  \hspace*{0pt}
+  \\[0.5cm]
+  #2
+  \end{tabular}
+  \endgroup
+}

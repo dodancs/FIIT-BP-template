@@ -1,0 +1,69 @@
+% Import default values & document settings
+\include{values}
+
+% Setup document
+\documentclass[\FIITdefaultFontSize,a4paper,twoside,openright,\FIITlanguage]{book}
+
+% Load all necessary packages
+\include{packages}
+\bibliography{bibliography}
+
+\begin{document}
+
+% Layout
+\setstretch{1.5}
+
+% Bibliography
+\defbibheading{references}[References]{ 
+  \chapter*{#1}
+  \markboth{#1}{#1}
+}
+\defbibheading{referencessec}[References]{ 
+  \section*{#1}
+  \markboth{#1}{#1}
+}
+
+% Cover & title page
+\include{pages/titlepage}
+
+% Annotation
+\include{pages/annotation}
+
+% Thesis assignment
+\newpage
+\thispagestyle{empty}
+\includepdf[pages=1]{assets/zadanie}
+\newpage
+\input{templates/empty}
+
+% Declaration of honor
+\include{pages/declaration}
+
+% Acknowledgements
+\include{pages/acknowledgements}
+
+% Table of contents
+\renewcommand{\contentsname}{Table of contents}
+\tableofcontents{}
+\input{templates/empty}
+
+% List of figures
+%\listoffigures
+%\input{templates/empty}
+
+% List of tables
+%\listoftables
+%\input{templates/empty}
+
+% List of abbreviations
+\include{pages/abbreviations}
+
+\pagenumbering{arabic}
+
+\begin{refsegment}
+
+\chapter{Test}
+
+\end{refsegment}
+
+\end{document}
