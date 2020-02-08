@@ -52,7 +52,11 @@
 \include{pages/acknowledgements}
 
 % Table of contents
+\ifx\FIITlagEN\undefined
+\renewcommand{\contentsname}{Obsah}
+\else
 \renewcommand{\contentsname}{Table of contents}
+\fi
 \tableofcontents{}
 \emptypage
 
