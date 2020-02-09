@@ -23,14 +23,17 @@
 \setstretch{1.5}
 
 % Bibliography
+\ifx\FIITlagEN\undefined
+\defbibheading{references}[Zoznam použitej literatúry]{ 
+  \chapter*{#1}
+  \markboth{#1}{#1}
+}
+\else
 \defbibheading{references}[References]{ 
   \chapter*{#1}
   \markboth{#1}{#1}
 }
-\defbibheading{referencessec}[References]{ 
-  \section*{#1}
-  \markboth{#1}{#1}
-}
+\fi
 
 % Cover & title page
 \include{pages/titlepage}
@@ -71,12 +74,18 @@
 % List of abbreviations
 \include{pages/abbreviations}
 
+% Enable page numbering
 \pagenumbering{arabic}
 
+% Begin refferences segment
 \begin{refsegment}
 
 \include{content/chapter1}
 
-\end{refsegment}
+\include{content/chapter2}
 
+% Bibliography
+\printbibliography[heading=references,segment=\therefsegment]
+
+\end{refsegment}
 \end{document}
