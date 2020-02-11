@@ -19,21 +19,8 @@
 
 \begin{document}
 
-% Layout
-\setstretch{1.5}
-
-% Bibliography
-\ifx\FIITlagEN\undefined
-\defbibheading{references}[Zoznam použitej literatúry]{ 
-  \chapter*{#1}
-  \markboth{#1}{#1}
-}
-\else
-\defbibheading{references}[References]{ 
-  \chapter*{#1}
-  \markboth{#1}{#1}
-}
-\fi
+% Initialize document
+\include{initialize}
 
 % Cover & title page
 \include{pages/titlepage}
@@ -88,4 +75,10 @@
 \printbibliography[heading=references,segment=\therefsegment]
 
 \end{refsegment}
+
+% Appendix
+\appendix
+
+\include{content/appendix1}
+
 \end{document}
