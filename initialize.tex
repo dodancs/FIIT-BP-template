@@ -5,6 +5,7 @@
 \ifx\FIITlagEN\undefined
 \defbibheading{references}[Zoznam použitej literatúry]{ 
   \chapter*{#1}
+  \addcontentsline{toc}{chapter}{#1}
   \markboth{#1}{#1}
 }
 \defbibheading{referencessec}[Zoznam použitej literatúry]{ 
@@ -14,6 +15,7 @@
 \else
 \defbibheading{references}[References]{ 
   \chapter*{#1}
+  \addcontentsline{toc}{chapter}{#1}
   \markboth{#1}{#1}
 }
 \defbibheading{referencessec}[References]{ 
