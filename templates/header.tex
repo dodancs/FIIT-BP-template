@@ -1,4 +1,4 @@
-\begin{center}
+	\begin{center}
 \thispagestyle{empty}
 \ifx\FIITlagEN\undefined
 {\Large \FIITuniversitySK}
@@ -18,7 +18,11 @@
 \smallskip{}
 
 \begin{center}
-\FIITevidenceNumber
+\ifx\FIITlagEN\undefined
+Evidenčné číslo: \FIITevidenceNumber
+\else
+Reg. No.: \FIITevidenceNumber
+\fi
 \par\end{center}
 \vfill{}
 
