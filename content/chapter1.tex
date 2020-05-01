@@ -2,6 +2,36 @@
 \par \lipsum[3]
 \cite{coplienOredevDCI}
 
+\par Text highlighting in {\btHL action}! {\btHL This is all inline!}
+
+\par Here is also an example of code that is {\btHL minted}.
+\begin{minted}{python}
+with open(sys.argv[1], encoding='utf-8') as export:
+	for line in export:
+		split = line.split('|')
+		output.write("('%s', '%s', %s, '%s', '%s', '%s', '%s', '%s', %s, %s),\n" %
+					 (
+						 uuid.uuid4(),
+						 "dd840134-baa3-4106-b883-4ef9b4fe19d6" if split[2].strip(
+						 ) == "1" else "998e5e31-1edd-4d55-13cc-cc713a69a3f7",
+						 site(split[5].strip()),
+						 "0",
+						 split[10].strip(),
+						 split[4].strip(),
+						 split[6].strip(),
+						 '{"username": "' + (split[4].strip().split('@')[0]) +
+						 '"}' if split[10].strip() == "0" else '{"username": "' + (split[4].strip().split('@')[0]) +
+						 '", "firstname": "' +
+						 split[7].strip() + '", "lastname": "' +
+						 split[8].strip() + '", "birthday": "' +
+						 split[9].strip() + '"}',
+						 'CURRENT_TIMESTAMP',
+						 'CURRENT_TIMESTAMP'
+					 )
+					 )
+	export.close()
+\end{minted}
+
 \par \lipsum[8]
 \cite{coplienGOTODCI}
 \par \lipsum{3}
