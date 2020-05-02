@@ -40,3 +40,9 @@ This will then use variables without the SK suffix.
 - `main.tex` - is the main document file - containing the actual structure of the document
 - `packages.tex` - contains includes for packages, and some custom commands
 - `values.tex` - contains global variables (author, title, etc., font size, ...) and language selection
+
+
+### Thanks
+I got some templates from one or two folks, but they weren't working that good for me, or the file structure was a mess.
+
+Nevermind that, thank you for the tips and tricks you used!

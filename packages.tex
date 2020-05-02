@@ -50,3 +50,9 @@
 \thispagestyle{empty}
 \mbox{}
 \newpage}
+
+% openright does not work :(
+\let\tmp\oddsidemargin
+\let\oddsidemargin\evensidemargin
+\let\evensidemargin\tmp
+\reversemarginpar
