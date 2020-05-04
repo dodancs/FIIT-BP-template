@@ -50,11 +50,10 @@
 \renewcommand{\contentsname}{Table of contents}
 \fi
 \tableofcontents{}
-\emptypage
 
 % List of figures
-%\listoffigures
-%\emptypage
+\listoffigures
+\emptypage
 
 % List of tables
 %\listoftables
@@ -73,10 +72,13 @@
 
 \include{content/chapter2}
 
-\ifx\FIITlagEN\undefined
-\else
-\include{content/resume}
-\fi
+\include{content/chapter3}
+
+\include{content/chapter4}
+
+\include{content/chapter5}
+
+\include{content/chapter6}
 
 % Bibliography
 \printbibliography[heading=references,segment=\therefsegment]
@@ -87,5 +89,14 @@
 \appendix
 
 \include{content/appendix1}
+
+\include{pages/time_schedule}
+
+\include{pages/digital_medium}
+
+\ifx\FIITlagEN\undefined
+\else
+\include{pages/resume}
+\fi
 
 \end{document}
