@@ -27,9 +27,6 @@
 % Cover & title page
 \include{pages/titlepage}
 
-% Annotation
-\include{pages/annotation}
-
 % Thesis assignment
 \newpage
 \thispagestyle{empty}
@@ -42,6 +39,9 @@
 
 % Acknowledgements
 \include{pages/acknowledgements}
+
+% Annotation
+\include{pages/annotation}
 
 % Table of contents
 \ifx\FIITlagEN\undefined
@@ -80,6 +80,11 @@
 
 \include{content/chapter6}
 
+\ifx\FIITlagEN\undefined
+\else
+\include{pages/resume}
+\fi
+
 % Bibliography
 \printbibliography[heading=references,segment=\therefsegment]
 
@@ -93,10 +98,5 @@
 \include{pages/time_schedule}
 
 \include{pages/digital_medium}
-
-\ifx\FIITlagEN\undefined
-\else
-\include{pages/resume}
-\fi
 
 \end{document}

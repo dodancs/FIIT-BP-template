@@ -2,11 +2,10 @@
 \thispagestyle{empty}
 
 \ifx\FIITlagEN\undefined
-\chapter*{Obsah digitálneho média}
-\markboth{Obsah digitálneho média}{Obsah digitálneho média}
-\addcontentsline{toc}{chapter}{Obsah digitálneho média} 
+\chapter{Obsah digitálneho média}
 \else
-\chapter*{Contents of the digital medium}
-\markboth{Contents of the digital medium}{Contents of the digital medium}
-\addcontentsline{toc}{chapter}{Contents of the digital medium} 
+\chapter{Contents of the digital medium}
 \fi
+
+\pagenumbering{arabic}
+\renewcommand*{\thepage}{C-\arabic{page}}
