@@ -9,3 +9,36 @@
 
 \pagenumbering{arabic}
 \renewcommand*{\thepage}{C-\arabic{page}}
+
+\ifx\FIITlagEN\undefined
+\par Evidenčné číslo práce v informačnom systéme: \FIITevidenceNumber
+\else
+\par Registration number of the thesis in the information system: \FIITevidenceNumber
+\fi
+
+\ifx\FIITlagEN\undefined
+\par Obsah digitálnej časti práce (archív ZIP):
+\else
+\par Contents of the digital medium (ZIP archive):
+\fi
+
+\begin{minted}[linenos=false]{text}
+Folder                  Contents
+/bin                    binárne súbory umožňujúce ...
+    /service
+    /app
+/models                 modely opísané v práci
+    modelA
+    modelB
+/scripts
+/data                   dátové množiny použité na ...
+/praca-pdf              pdf verzia záverečnej práce
+    /praca.pdf          pdf hlavná časť záverečnej práce
+    /prilohy.pdf        pdf textové prílohy záverečnej práce
+
+\end{minted}
+
+% only if digital medium contents exceed 1 GB
+% \par Digitálna časť práce má veľkosť 3.75 GB, kvôli čomu je uložená v systéme G Suite for Education.
+% \par Názov odovzdaného archívu: DP\_prilohy\_digital\_meno.zip
+
