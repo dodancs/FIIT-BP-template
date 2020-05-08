@@ -50,6 +50,7 @@
 \renewcommand{\contentsname}{Table of contents}
 \fi
 \tableofcontents{}
+\emptypage
 
 % List of figures
 \listoffigures
@@ -69,14 +70,19 @@
 \begin{refsegment}
 
 \include{content/chapter1}
+\emptypage
 
 \include{content/chapter2}
+\emptypage
 
 \include{content/chapter3}
+\emptypage
 
 \include{content/chapter4}
+\emptypage
 
 \include{content/chapter5}
+\emptypage
 
 \include{content/chapter6}
 
@@ -87,6 +93,12 @@
 
 % Bibliography
 \printbibliography[heading=references,segment=\therefsegment]
+
+% no page numbers for appendicies
+\addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
+\addtocontents{toc}{\cftpagenumbersoff{chapter}}
+
+\emptypage
 
 \end{refsegment}
 
