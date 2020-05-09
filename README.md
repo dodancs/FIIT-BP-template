@@ -10,7 +10,7 @@ You may [check out the preview](preview.pdf) to see whether you like it.
 
 Just clone, and explore and use.
 
-*NOTE: You may also use the package `\usepackage{emptypage}` to disable showing of header on empty pages instead of my `\emptypage` command to align pages for chapters to always start on the right side. - Suggested by Lukáš Anda @LukasAnda*
+*NOTE: You may also use the package `\usepackage{emptypage}` to disable showing of header on empty pages instead of my `\emptypage` command to align pages for chapters to always start on the right side. - Suggested by Lukáš Anda [@LukasAnda](https://github.com/LukasAnda)*
 
 ### Language setting
 
