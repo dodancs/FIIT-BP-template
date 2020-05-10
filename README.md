@@ -10,41 +10,42 @@ You may [check out the preview](preview.pdf) to see whether you like it.
 
 Just clone, and explore and use.
 
-*NOTE: You may also use the package `\usepackage{emptypage}` to disable showing of header on empty pages instead of my `\emptypage` command to align pages for chapters to always start on the right side. - Suggested by Lukáš Anda [@LukasAnda](https://github.com/LukasAnda)*
+_NOTE: You may also use the package `\usepackage{emptypage}` to disable showing of header on empty pages instead of my `\emptypage` command to align pages for chapters to always start on the right side. - Suggested by Lukáš Anda [@LukasAnda](https://github.com/LukasAnda)_
 
 ### Language setting
 
-__To change the language from Slovak to English, please edit values.tex like so:__
+**To change the language from Slovak to English, please edit values.tex like so:**
 
 From:
+
 ```
 \newcommand{\FIITlanguage}[0] {slovak}
 %\def\FIITlagEN{}
 ```
 
 To:
+
 ```
-\newcommand{\FIITlanguage}[0] {english}
+\newcommand{\FIITlanguage}[0] {slovak,english}
 \def\FIITlagEN{}
 ```
 
 This will then use variables without the SK suffix.
 
-
 ### Folder/File structure
 
-- __assets__ - contains any assets used in the project
-- __content__ - this folder contains the actual content of the document
-- __pages__ - this folder contains main pages (title, cover, annotation, etc.)
-- __templates__ - this folder contains templates for parts of the document (components of pages, etc.)
+- **assets** - contains any assets used in the project
+- **content** - this folder contains the actual content of the document
+- **pages** - this folder contains main pages (title, cover, annotation, etc.)
+- **templates** - this folder contains templates for parts of the document (components of pages, etc.)
 - `bibliography.bib` - contains sample bibliography
 - `initialize.tex` - contains initializations that happen after the document begins
 - `main.tex` - is the main document file - containing the actual structure of the document
 - `packages.tex` - contains includes for packages, and some custom commands
 - `values.tex` - contains global variables (author, title, etc., font size, ...) and language selection
 
-
 ### Thanks
+
 I got some templates from one or two folks, but they weren't working that good for me, or the file structure was a mess.
 
 Nevermind that, thank you for the tips and tricks you used!
